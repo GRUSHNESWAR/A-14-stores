@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>A-14 Stores</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="particles"></div>
+<div class="cursor-glow"></div>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<h2 class="logo glow">A-14 STORES</h2>
+
+<ul class="nav-links">
+<li><a href="#">Home</a></li>
+<li><a href="#">Shop</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+<div class="cart-icon" onclick="toggleCart()">
+🛒 <span id="cart-count">0</span>
+</div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+<img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" class="hero-logo">
+
+<h1 class="glow">BUILD YOUR LEGACY</h1>
+
+<p>Discipline • Focus • Strength</p>
+
+<button class="hero-btn">Explore Collection</button>
+
+</section>
+
+
+<!-- PRODUCTS -->
+
+<section class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1520975916090-3105956dac38">
+<h3>Shadow Black Hoodie</h3>
+<p>$49</p>
+<button onclick="addToCart('Shadow Black Hoodie',49)">Add to Cart</button>
+</div>
+
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea">
+<h3>Oversized Power Hoodie</h3>
+<p>$59</p>
+<button onclick="addToCart('Oversized Power Hoodie',59)">Add to Cart</button>
+</div>
+
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7">
+<h3>Urban Discipline Hoodie</h3>
+<p>$54</p>
+<button onclick="addToCart('Urban Discipline Hoodie',54)">Add to Cart</button>
+</div>
+
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27">
+<h3>Pure White Hustle Hoodie</h3>
+<p>$52</p>
+<button onclick="addToCart('Pure White Hustle Hoodie',52)">Add to Cart</button>
+</div>
+
+</section>
+
+
+<!-- CART -->
+
+<div id="cart" class="cart">
+
+<h2>Your Cart</h2>
+
+<ul id="cart-items"></ul>
+
+<p>Total: $<span id="cart-total">0</span></p>
+
+<button class="clear-btn" onclick="clearCart()">Clear Cart</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
